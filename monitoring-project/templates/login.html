@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+	MyMonitor.com
+{% endblock %}
+
+{% block body %}
+<div id="login" style="float: left; width: 29%; border-radius: 10px; border: 1px solid #00BFFF; padding-left: 2%; padding-right: 2%; padding-bottom: 2%; background-color: #FFF5EE; text-align: center; width: 30%; margin-left: 35%; margin-right: 35%; margin-top: 10%">
+	<h2 style="text-shadow: 0px 0px 10px grey"> Administrator only </h2><br>
+	<form action="" method="POST">
+		<fieldset>
+			<div class="form-group">
+				<label for="email">Email :</label><br>
+				<input type="text" name="email" class="form-control" id="email" placeholder="admin@monitor.com"><br>
+			</div>
+			<div class="form-group">
+				<label for="password">Password :</label><br>
+				<input type="Password" name="password" class="form-control" id="password" placeholder="*******"><br>
+			</div>
+			<input type="submit" class="btn btn-outline-primary" value="sign in"/>
+		</fieldset>
+	</form>
+</div>
+{% endblock %}
